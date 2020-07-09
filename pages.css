@@ -51,6 +51,21 @@ article figure img
     box-shadow: 10px 10px 23px -6px rgba(0,0,0,0.75);
 }
 
+.zelda
+{
+    object-fit: contain;
+}
+
+.Link_vert
+{
+    object-fit: contain;
+}
+
+.Epona
+{
+    object-fit: contain;
+}
+
 article
 {
     display: flex;
