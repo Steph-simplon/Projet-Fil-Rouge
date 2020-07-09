@@ -1,0 +1,281 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/*-------------------------------------------------------polices------------------------------------------*/
+
+@font-face
+{
+    font-family: 'Triforce';
+    src: url(assets/Triforce.ttf) ;
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    src: url(https://fonts.google.com/?query=roboto);
+}
+
+/*------------------------------------------------------------div------------------------------------------------*/
+
+.fond_vert
+{
+    background-image: url(assets/fond_vert.png);
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex ;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: flex-end;
+    justify-content: space-around;
+}
+
+/*---------------------------------------------------------------titre---------------------------------------------------*/
+
+h1
+{
+    color: #FFFFFF;
+    font-family: 'Roboto' ;
+    font-size: 3vw;
+    text-align: center;
+    margin: 0;
+}
+
+.NotZeldaintro
+{
+    font-family: 'Triforce';
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 9vw;
+}
+
+/*-------------------------------------------------------------------bouclier et animation----------------------------------------------------*/
+
+.shield
+{
+    background-image: url(assets/shield-modifie.png);
+    height: auto;
+    width: 6vw;
+    animation-name: boing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes boing
+{
+    0%{
+        bottom: 2%;
+    }
+    50%{
+        bottom: 4%;
+    }
+    100%{
+        bottom: 2%;
+    }
+}
+
+/*------------------------------------------------------------accueil, la suite-------------------------------------------*/
+
+.fond_accueil
+{
+    background-image: url(assets/fond_bleu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+
+/*----------------------------------------------------------- menu accueil ----------------------------------------------------*/
+
+.fond_accueil i
+{
+    display: none;
+}
+
+nav
+{
+    background-color: #343434;
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    z-index: 1;
+}
+
+#NotZelda
+{
+    min-height: auto;
+    width: 20vw;
+    padding: 5%;
+    margin-bottom: 2vh;
+    border-bottom: #9F9F9F solid 1px;
+}
+
+ul
+{
+    list-style: none;
+    font-family: 'Triforce';
+    color: #b99f66;
+    font-size: 3vw;
+    padding: 0vw;
+}
+
+
+li, li a, li:hover, li a:hover
+{
+    padding: 5vh 0;
+}
+
+li a, li a:hover{
+    padding: 5vh 3vw;
+}
+
+li
+{
+    margin: 0;
+    
+}
+
+li a
+{
+    text-decoration: none;
+    color: #b99f66;
+}
+
+li:hover
+{
+    background-color: #b99f66;  
+}
+
+li a:hover
+{
+    text-decoration: none;
+    color: #343434;
+}
+
+
+/*------------------------------------------------------------ link, accueil --------------------------------------------------*/
+
+
+.link
+{
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.link img
+{
+    height: 90vh;
+}
+
+/*-----------------------------------------------------------Media Queries-----------------------------------*/
+
+@media screen and (max-width: 750px) and (orientation: portrait) {
+
+    h1
+    {
+        font-size: 6vw;
+    }
+
+    .NotZeldaintro
+    {
+        font-size: 15vw;
+    }
+
+    .shield
+    {
+        width: 12vw;
+    }
+
+    nav
+    {
+        display: none;
+    }
+
+    .fond_accueil i
+    {
+        color: #b99f66;
+        background-color: #343434;
+        display: block;
+        position: absolute;
+        font-size: 10vw;
+        margin: 2vh 4vw;
+        padding: 1vh 2vw;
+        right: 0;
+    }
+
+    .fond_accueil i:hover{
+        color: #b99f66;
+    }
+
+    ul
+    {
+        
+        font-size: 10vw;
+    }
+
+    #NotZelda{
+        width: 55vw;
+    }
+    
+}
+
+@media screen and (max-width: 750px) and (orientation: landscape) {
+
+    h1
+    {
+        font-size: 5vw;
+    }
+
+    .NotZeldaintro
+    {
+        font-size: 12vw;
+    }
+
+    .fond_accueil i
+    {
+        display: none;
+    }
+
+    nav
+    {
+        display: inherit;
+    }
+
+    ul
+    {   
+     font-size: 3vw;
+    }
+
+    #NotZelda
+    {
+        width: 21vw;
+    }
+    
+}
+
+
+
+
+

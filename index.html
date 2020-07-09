@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd75990732.js" crossorigin="anonymous"></script>
+    <title>Not Zelda</title>
+
+</head>
+
+
+<body>
+
+    <!-----------------------Div de la première image------------------------------------------------------------------->
+
+    <div class="fond_vert">
+        <h1>Bienvenue sur <span class="NotZeldaintro"> <br>Not Zelda</span></h1>
+
+        <a href="#NotZelda" class="shield"> <img src="assets/shield-modifie.png" alt="Bouclier de link" class="shield"> </a>
+    </div>
+
+
+    <!--------------------------- Vraie page d'accueil------------------------------------------------------------------->
+
+    <div class="fond_accueil">
+        
+        <!---------------------------Navigation-------------------------------------------------------------------------->
+
+        <i class="fas fa-bars" id="burger" onclick="apparitionMenu()"></i>
+        <nav id="menu">
+            <a href="#"><img src="assets/Logo-notzelda.png" alt="Logo Not Zelda" title="Not Zelda" id="NotZelda"></a>
+            <ul>
+                <li><a href="historique.html">* Historique</a></li>
+                <li><a href="univers.html">* Univers</a></li>
+                <li><a href="personnages.html">* Personnages</a></li>
+                <li><a href="anecdotes.html">* Anecdotes</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="link">
+            <img src="assets/link.png" alt="Link bandant son arc dans BotW" />
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script>
+
+    function apparitionMenu() {
+
+        const menu = document.getElementById("menu");
+
+        if(menu.style.display === "none") {
+
+        menu.style.display = "block";
+
+        } else {
+
+        menu.style.display = "none";
+
+        }
+    }
+
+
+
+    
+
+
+</script>
+</html>

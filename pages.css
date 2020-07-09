@@ -1,0 +1,168 @@
+html
+{
+    height: 100vh;
+}
+
+body
+{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: 'Triforce';
+    src: url(assets/Triforce.ttf) ;
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    src: url(https://fonts.google.com/?query=roboto);
+}
+
+/*------------------------------------- Page Article ---------------------------*/
+
+.page
+{
+    background-image: url(assets/fond_gris.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page > div img
+{
+    width: 17vw;
+    padding: 2vw;
+}
+
+article figure
+{
+    margin: 0;
+}
+
+article figure img
+{
+    width: 40vw;
+    height: 35vw;
+    object-fit: cover;
+    box-shadow: 10px 10px 23px -6px rgba(0,0,0,0.75);
+}
+
+article
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh 0;
+}
+
+article:nth-child(2n+1)
+{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.article-content
+{
+    width: 50vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+
+.article-content h1
+{
+    font-size: 4.5em;
+    color: #B99F66;
+    font-family: Triforce, sans-serif;
+    font-weight: lighter;
+}
+
+.article-content p
+{
+    font-size: 1.2em;
+    text-align: justify;
+    color: #B99F66;
+    font-family: Roboto, sans-serif;
+}
+
+.article-rs
+{
+	color: #B99F66;
+	font-size: 2em;
+}
+
+.article-rs a
+{
+    color: #B99F66;
+}
+
+.article-rs a:hover
+{
+    color: #9F9F9F;
+}
+
+.article-rs a:active
+{
+    color: #9F9F9F ;
+}
+
+.article-rs i
+{
+	margin-right: 2vh;
+}
+
+
+.page .retour
+{
+	font-family: Roboto, sans-serif;
+	text-decoration: none;
+	font-weight: 600;
+	color: #343434;
+	background-color: #B99F66;
+	padding: 0.6vw;
+	border-radius: 10px;
+	margin: auto; 
+	margin-top: 2%;
+	width: 8vw;
+	text-align: center;
+	box-shadow: 10px 10px 23px -6px rgba(0,0,0,0.75);
+}
+
+.retour:hover
+{
+    background-color: #9F9F9F;
+}
+
+
+
+/*-------------------------------------------------------------------Media Queries---------------------------------------*/
+
+
+@media screen and (max-width: 1040px) {
+
+    article figure img
+    {
+        width: 90vw;
+        height: 50vw;
+    }
+
+    .article-content
+    {
+        width: 90vw;
+    }
+
+    .page .retour
+    {
+        width: 20vw;
+        margin-bottom: 2vh;
+    }
+
+  
+}
